@@ -1,0 +1,18 @@
+
+body{
+
+    font-family: 'Noto Sans TC', sans-serif;
+
+    img{
+        // RWD 防止圖片破版
+        max-width: 100%;
+        height: auto;
+    }
+
+    a{
+        text-decoration: none;
+        display: block;
+        color: #707070;
+    }
+
+}

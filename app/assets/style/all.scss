@@ -2,3 +2,12 @@
 @import './helpers/bootstrap.scss';
 
 @import './layout/_index.scss';
+
+@import './base/base';
+@import './base/typography';
+@import './base/background';
+
+@import './components/buttons';
+@import './components/list';
+@import './components/form';
+

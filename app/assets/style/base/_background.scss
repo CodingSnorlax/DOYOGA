@@ -1,0 +1,19 @@
+.bgSetting{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    background-image: url('../images/DOYOGA_Logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 96px;
+    height: 31px;
+
+    /*  將文字推出 <h1>  */
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+

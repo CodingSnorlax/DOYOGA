@@ -1,0 +1,16 @@
+.subscribe{
+    &__input{
+        width: 270px;
+        padding: 8px 16px 8px 16px;
+        border: none;
+        display: block;
+        border-radius: 4px 0 0 4px;
+    }
+
+    &__btn{
+        padding: 8px 16px 8px 16px;
+        border: none;
+        display: block;
+        border-radius: 0 4px 4px 0;
+    }
+}
