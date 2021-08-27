@@ -16,4 +16,81 @@
     white-space: nowrap;
 }
 
+.mainKv{
+    background-image: url('../images/index_banner.jpeg');
+    width: 100%;
+    height: 560px;
+    background-position: bottom center;
 
+    @include media-breakpoint-up(md) {
+        height: 585px;
+    }
+}
+
+.teacherCardPic{
+
+    img{
+        object-fit: cover;
+        height: 628px;
+        border-radius: 16px;
+    }
+
+}
+
+.relaxCardPic{
+
+    height: 210px;
+    
+    @include media-breakpoint-up(md) {
+        height: 117px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 207px;
+    }
+
+    img{
+        object-fit: cover;
+        border-radius: 16px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.relaxBigCardPic{
+
+    height: 210px;
+
+    @include media-breakpoint-up(md) {
+        height: 266px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 444px;
+    }
+
+    img{
+        object-fit: cover;
+        border-radius: 16px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.big{
+    width: 330px;
+    height: 266px;
+}
+
+.courseCardPic{
+
+    height: 165px;
+
+    img{
+        object-fit: cover;
+        border-radius: 16px;
+        height: 100%;
+        width: 100%;
+    }
+
+}

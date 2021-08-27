@@ -2,3 +2,56 @@
 .fw-medium{
     font-weight: 500;
 }
+
+.titleStyleCenter{
+    padding-top: 32px;
+    padding-bottom: 24px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg){
+        padding-top: 40px;
+        padding-bottom: 32px;
+    }
+}
+
+.titleStyleStart{
+    padding-top: 32px;
+    padding-bottom: 24px;
+
+    @include media-breakpoint-up(lg){
+        padding-top: 40px;
+        padding-bottom: 32px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+
+    .fs-md-1{
+        font-size: 36px !important;
+    }
+
+    .fs-md-2{
+        font-size: 28px !important;
+    }
+
+    .fs-md-3{
+        font-size: 24px !important;
+    }
+
+    .fs-md-4{
+        font-size: 20px !important;
+    }
+
+    .fs-md-5{
+        font-size: 16px !important;
+    }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+    .fs-lg-4{
+        font-size: 20px !important;
+    }
+
+}

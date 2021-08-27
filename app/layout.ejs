@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
   </head>
 
   <body>
+    <!-- header -->
     <header class="bg-light pt-4 pb-3">
 
       <div class="container">
@@ -30,10 +32,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <ul class="list-unstyled navClassList mb-0 d-none d-lg-flex d-lg-block">
-            <li><a class="navClassList__item ps-4 pe-4" href="#">課程介紹</a></li>
-            <li><a class="navClassList__item ps-4 pe-4" href="#">瑜珈空間</a></li>
-            <li><a class="navClassList__item ps-4 pe-4" href="#">當月課表</a></li>
+          <ul class="list-unstyled courseList mb-0 d-none d-lg-flex d-lg-block">
+            <li><a class="courseList__item ps-4 pe-4" href="#">課程介紹</a></li>
+            <li><a class="courseList__item ps-4 pe-4" href="#">瑜珈空間</a></li>
+            <li><a class="courseList__item ps-4 pe-4" href="#">當月課表</a></li>
           </ul>
           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -60,13 +62,14 @@
 
     <%- contents %>
 
+    <!-- footer -->
     <footer class="footer bg-primary text-white">
 
-      <!-- 訂閱電子報 -->
+      <!-- footer 上半部 訂閱電子報 -->
       <div class="subscribeBarWrapper border-bottom pt-6 pt-md-8 pb-6 pb-md-8">
           <div class="container">
-            <div class="subscribeBar d-lg-flex justify-content-lg-between">
-              <p class="fs-3">現在訂閱，獲得課程優惠碼！</p>
+            <div class="subscribeBar d-lg-flex justify-content-lg-between align-items-center">
+              <p class="fs-3 mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
               <div class="subscribe d-flex">
                 <input type="text" class="subscribe__input" placeholder="輸入您的電子信箱" id="subscribe">
                 <button type="button" class="subscribe__btn text-white bg-secondary">訂閱</button>
@@ -75,22 +78,42 @@
           </div>
       </div>
 
-      <div class="container">
-        <div class="socialMedia d-flex justify-content-between align-items-center">
-          <img src="assets/images/DOYOGA-white.png" alt="DOYOGA logo">
-          <ul class="list-unstyled d-flex mb-0">
-            <li><a href="#"><i class="me-2 bi bi-facebook fs-2 text-white"></i></a></li>
-            <li><a href="#"><i class="me-2 bi bi-instagram fs-2 text-white"></i></a></li>
-            <li><a href="#"><i class="bi bi-twitter fs-2 text-white"></i></a></li>
-          </ul>
-        </div>
+      <!-- footer 下半部 -->
 
-        
+      <div class="container">
+
+        <div class="row pt-6 pt-md-8 pb-4">
+
+          <div class="col-6 col-md-4 order-md-1 mb-8 mb-md-0">
+            <img src="assets/images/DOYOGA-white.png" alt="DOYOGA logo">
+            <ul class="list-unstyled">
+              <li><a class="mb-2 text-white" href="#">課程介紹</a></li>
+              <li><a class="mb-2 text-white" href="#">瑜珈空間</a></li>
+              <li><a class="text-white" href="#">當月課表</a></li>
+            </ul>
+            <small class="d-md-none">© 2021. All Rights Reserved.</small>
+          </div>
+          
+          <div class="col-6 col-md-4 order-md-3">
+            <ul class="list-unstyled d-flex mb-0 justify-content-end">
+              <li><a href="#"><i class="me-2 bi bi-facebook fs-2 text-white"></i></a></li>
+              <li><a href="#"><i class="me-2 bi bi-instagram fs-2 text-white"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter fs-2 text-white"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 order-md-2 d-flex flex-column justify-content-end text-center">
+            <small class="d-none d-md-block">© 2021. All Rights Reserved.</small>
+          </div>
+
+        </div>
       </div>
-        
-      
+
     </footer>
 
+    <!-- js -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

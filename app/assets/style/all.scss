@@ -1,7 +1,8 @@
 
 @import './helpers/bootstrap.scss';
+@import './base/reset';
 
-@import './layout/_index.scss';
+@import './layout/index';
 
 @import './base/base';
 @import './base/typography';
@@ -10,4 +11,5 @@
 @import './components/buttons';
 @import './components/list';
 @import './components/form';
-
+@import './components/card';
+@import './components/swiper';

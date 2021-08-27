@@ -1,0 +1,40 @@
+// .swiper{
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden;
+//     overflow-x: scroll;
+//   }
+
+//   .swiper-wrapper{
+    
+//   }
+
+//   .swiper-slide {
+//     width: 100%;
+//     img{
+//         width: 100%;
+//         height: 400px;
+//         object-fit: cover;
+//     }
+//   }
+
+.swiper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-course {
+
+    img{
+    border-radius: 16px;
+    object-fit: cover;
+    }
+    
+  }
+  
