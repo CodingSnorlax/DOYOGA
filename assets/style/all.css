@@ -20695,12 +20695,14 @@ body {
 body img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 body a {
   text-decoration: none;
   display: block;
   color: #707070;
+  cursor: pointer;
 }
 
 .fw-medium {
@@ -20786,6 +20788,108 @@ body a {
   }
 }
 
+.contact__btn {
+  color: #907A7B;
+  border: 1px solid #907A7B;
+  background-color: transparent;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+
+.contact__btn:hover {
+  background-color: #907A7B;
+  color: #FFFFFF;
+}
+
+.smallBtn {
+  padding: 8px 16px 8px 16px;
+}
+
+.threeBtnGroup__btn {
+  border-radius: 16px;
+  padding: 12px 20px;
+  color: #907A7B;
+  background-color: #F5F0E7;
+}
+
+@media (min-width: 768px) {
+  .threeBtnGroup__btn {
+    padding: 12px 13px;
+  }
+}
+
+@media (min-width: 992px) {
+  .threeBtnGroup__btn {
+    padding: 12px 48px;
+  }
+}
+
+.threeBtnGroup__btn--active {
+  background-color: #907A7B;
+  color: #FFFFFF;
+}
+
+.courseList__item {
+  color: #707070;
+}
+
+.courseList__item:hover {
+  color: #907A7B;
+}
+
+.subscribe__input {
+  width: 270px;
+  padding: 8px 16px 8px 16px;
+  border: none;
+  display: block;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe__btn {
+  padding: 8px 16px 8px 16px;
+  border: none;
+  display: block;
+  border-radius: 0 4px 4px 0;
+}
+
+.primary-form-style {
+  border: 1px solid #C0A4A5;
+  border-radius: 4px;
+}
+
+.primary-form-style::-webkit-input-placeholder {
+  color: #C0A4A5;
+}
+
+.primary-form-style::-moz-placeholder {
+  color: #C0A4A5;
+}
+
+.primary-form-style:-ms-input-placeholder {
+  color: #C0A4A5;
+}
+
+.primary-form-style::-ms-input-placeholder {
+  color: #C0A4A5;
+}
+
+.primary-form-style::placeholder {
+  color: #C0A4A5;
+}
+
+.overlay__card__img {
+  width: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .biggerCard {
+    margin-left: -95px;
+  }
+}
+
 .teacherCardPic img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -20841,99 +20945,46 @@ body a {
   width: 100%;
 }
 
-.big {
-  width: 330px;
-  height: 266px;
+.projectCardPic {
+  --bs-aspect-ratio: 70%;
 }
 
-.courseCardPic {
-  height: 165px;
+@media (min-width: 768px) {
+  .projectCardPic {
+    --bs-aspect-ratio: 73%;
+  }
 }
 
-.courseCardPic img {
+.projectCardPic img {
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
   height: 100%;
   width: 100%;
 }
 
-.contact__btn {
-  color: #907A7B;
-  border: 1px solid #907A7B;
-  background-color: transparent;
-  padding: 8px 16px;
-  border-radius: 16px;
+@media (min-width: 768px) {
+  .projectCardPic img {
+    border-radius: 16px 0 0 16px;
+  }
 }
 
-.contact__btn:hover {
-  background-color: #907A7B;
-  color: #FFFFFF;
-}
-
-.btn {
-  padding: 8px 16px 8px 16px;
-}
-
-.courseList__item {
-  color: #707070;
-}
-
-.courseList__item:hover {
-  color: #907A7B;
-}
-
-.subscribe__input {
-  width: 270px;
-  padding: 8px 16px 8px 16px;
-  border: none;
-  display: block;
-  border-radius: 4px 0 0 4px;
-}
-
-.subscribe__btn {
-  padding: 8px 16px 8px 16px;
-  border: none;
-  display: block;
-  border-radius: 0 4px 4px 0;
-}
-
-.overlay__card__img {
-  width: 100%;
-  height: 420px;
-  border-radius: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.overlay__card__text {
-  position: absolute;
-  top: 72%;
+@media (min-width: 992px) {
+  .projectCardPic img {
+    border-radius: 16px 16px 0 0;
+  }
 }
 
 @media (min-width: 768px) {
-  .overlay__card__text {
-    top: 60%;
+  .ratio-2x1 {
+    --bs-aspect-ratio: 50%;
   }
 }
 
-@media (min-width: 992px) {
-  .overlay__card__text {
-    top: 72%;
-  }
-}
-
-@media (min-width: 992px) {
-  .biggerCard {
-    margin-left: -95px;
-  }
-}
-
-.swiper {
+.courseSwiper {
   width: 100%;
   height: auto;
   overflow: hidden;
-  overflow-x: scroll;
 }
 
 .swiper-slide {
@@ -20948,10 +20999,49 @@ body a {
           align-items: center;
 }
 
-.swiper-course img {
+.swiper-slide img {
   border-radius: 16px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.feedbackSwiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.recommendSwiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.recommendSwiperImg {
+  width: 100%;
+  height: 260px;
+}
+
+.recommendSwiperImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.datepicker-primary {
+  color: #907A7B;
+}
+
+.datepicker-main {
+  color: #907A7B;
+}
+
+.datepicker-controls .btn:hover {
+  background-color: white;
+  color: #907A7B;
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+  background-color: #907A7B;
 }
 
 /*# sourceMappingURL=all.css.map */
