@@ -14,9 +14,13 @@ current: index
       <h2 class="fs-2 fs-md-1 fw-medium">DOYOGA，做你的瑜珈</h2>
       <p class="fs-4 fs-md-3">多給自己一點時間享受靜謐，傾聽內心的聲音。</p>
     </div>
-    <div class="mainKv__btn pt-2">
-      <button type="button" class="btn btn-light text-gray me-2 fs-4">立即預約</button>
-      <button type="button" class="btn btn-primary text-white fs-4">課程介紹</button>
+    <div class="mainKv__btn pt-2 d-flex">
+      <a href="./reservationPlan.html">
+        <button type="button" class="btn btn-light smallBtn text-gray me-2 fs-4">立即預約</button>
+      </a>
+      <a href="">
+        <button type="button" class="btn btn-primary smallBtn text-white fs-4">課程介紹</button>
+      </a>
     </div>
   </div>
 </div>
@@ -35,8 +39,10 @@ current: index
 
       <div class="col-12 col-md-4">
         <div class="card overlay__card bg-dark text-white mb-4">
-          <img class="overlay__card__img" src="assets/images/index_living_1.jpeg" class="card-img" alt="整體健身">
-          <div class="card-img-overlay overlay__card__text">
+          <div class="ratio" style="--bs-aspect-ratio: 121%;">
+            <img class="overlay__card__img" src="assets/images/index_living_1.jpeg" alt="整體健身">
+          </div>
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
             <h5 class="card-title fw-normal fs-4 fs-md-5 fs-lg-4">整體健身</h5>
             <p class="card-text">每一個動作，都融入運動解剖學的的觀點強調以身體的中心線為出發點。</p>
           </div>
@@ -45,8 +51,10 @@ current: index
 
       <div class="col-12 col-md-4">
         <div class="card overlay__card bg-dark text-white mb-4">
-          <img class="overlay__card__img" src="assets/images/index_living_2.jpeg" class="card-img" alt="整體健身">
-          <div class="card-img-overlay overlay__card__text">
+          <div class="ratio" style="--bs-aspect-ratio: 121%;">
+            <img class="overlay__card__img" src="assets/images/index_living_2.jpeg" alt="整體健身">
+          </div>
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
             <h5 class="card-title fw-normal fs-4 fs-md-5 fs-lg-4">減壓放鬆</h5>
             <p class="card-text">調節全身系統、改善血液循環、減壓養心、釋放身心，達到修心養性的目的。</p>
           </div>
@@ -55,8 +63,10 @@ current: index
 
       <div class="col-12 col-md-4">
         <div class="card overlay__card bg-dark text-white mb-4">
-          <img class="overlay__card__img" src="assets/images/index_living_3.jpeg" class="card-img" alt="整體健身">
-          <div class="card-img-overlay overlay__card__text">
+          <div class="ratio" style="--bs-aspect-ratio: 121%;">
+            <img class="overlay__card__img" src="assets/images/index_living_3.jpeg" class="card-img" alt="整體健身">
+          </div>
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
             <h5 class="card-title fw-normal fs-4 fs-md-5 fs-lg-4">局部雕塑</h5>
             <p class="card-text">幫助強化背部與腹部的核心肌群，增進我們身體穩定度以及保持良好體態。</p>
           </div>
@@ -166,7 +176,7 @@ current: index
         <div class="title pt-md-12 pt-lg-14 mb-4">
           <h2 class="text-secondary fs-2 mb-1">舒適空間、靜心放鬆</h2>
           <p class="text-primary fs-4 mb-4">我們都渴望平靜安穩的生活，擁有一處能夠靜心的角落，安撫每天繁雜忙碌的心。</p>
-          <a href="#"><p class="text-secondary">環境介紹<span><i class="bi bi-arrow-right ms-3"></i></span></p></a>
+          <a href="./classroom.html"><p class="text-secondary">環境介紹<span><i class="bi bi-arrow-right ms-3"></i></span></p></a>
         </div>
       </div>
 
@@ -214,11 +224,10 @@ current: index
           </div>
       </div>
 
-      <div class="col-12 col-md-6 ">
+      <div class="col-12 col-md-6">
 
             <!-- Swiper -->
-            <div class="swiper mySwiper courseSwiper">
-
+            <div class="courseSwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide swiper-course ratio ratio-1x1">
                   <img src="./assets/images/index_swiper1.jpeg" alt="">
@@ -248,12 +257,221 @@ current: index
 </section>
 
 
+<!-- 方案選擇 -->
+
+<section>
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-12">
+      <div class="titleStyleCenter">
+        <h2 class="text-secondary text-center fs-2 mb-1">方案選擇</h2>
+        <p class="text-primary fs-4">DOYOGA 可以帶給你...</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <div class="card border border-primary mb-4 mb-md-6 mb-lg-16">
+        <div class="row">
+          <div class="col-md-6 col-lg-12">
+            <div class="projectCardPic ratio">
+              <img class="" src="assets/images/index_swiper4_and_project_1.jpeg" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-12">
+            <div class="card-body p-6 d-flex flex-column justify-content-center text-center">
+              <h5 class="card-title fs-4 text-secondary mb-1">首次體驗</h5>
+              <p class="card-text fs-4 text-primary mb-2">NT $450 / 次</p>
+              <p class="text-secondary text-start mb-10 mb-md-6">分基礎、中級、高級可以選擇。初次至 DOYOGA 上課建議選擇此方案。</p>
+              <a href="#" class="btn btn-primary text-white pt-2 pb-2 fs-4">選擇課程</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <div class="card border border-primary mb-4 mb-4 mb-md-6 mb-lg-16">
+        <div class="row">
+          <div class="col-md-6 col-lg-12">
+            <div class="projectCardPic ratio">
+              <img class="" src="assets/images/index_project_2.jpeg" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-12">
+            <div class="card-body p-6 d-flex flex-column justify-content-center text-center">
+              <h5 class="card-title fs-4 text-secondary mb-1">短期體驗</h5>
+              <p class="card-text fs-4 text-primary mb-2">NT $1800 / 月</p>
+              <p class="text-secondary text-start mb-10 mb-md-6">分基礎、中級、高級可以選擇。想試著培養瑜珈習慣者可以選擇此方案。</p>
+              <a href="#" class="btn btn-primary text-white pt-2 pb-2 fs-4">選擇課程</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-4">
+      <div class="card border border-primary mb-4 mb-4 mb-md-6 mb-lg-16">
+        <div class="row">
+          <div class="col-md-6 col-lg-12">
+            <div class="projectCardPic ratio">
+              <img class="" src="assets/images/index_project_3.jpeg" class="card-img-top" alt="...">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-12">
+            <div class="card-body p-6 d-flex flex-column justify-content-center text-center">
+              <h5 class="card-title fs-4 text-secondary mb-1">長期體驗</h5>
+              <p class="card-text fs-4 text-primary mb-2">NT $5200 / 季</p>
+              <p class="text-secondary text-start mb-10 mb-md-6">分基礎、中級、高級可以選擇。有長期習慣做瑜伽者建議選擇此方案。</p>
+              <a href="#" class="btn btn-primary text-white pt-2 pb-2 fs-4">選擇課程</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</section>
 
 
+<!-- 聽聽他們怎麼說 -->
 
+<section class="bg-light pb-14">
+<div class="container">
 
+  <div class="row">
 
-    
+    <div class="col-12">
+      <div class="titleStyleCenter">
+        <h2 class="text-secondary text-center fs-2 mb-1">聽聽他們怎麼說</h2>
+      </div>
+    </div>
+
+    <!-- swiper -->
+
+    <div class="col-12">
+
+        <!-- Swiper -->
+      <div class="feedbackSwiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="card mb-2 p-4 w-100">
+              <div class="row g-0">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="assets/images/customer-1.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body ms-md-5">
+                    <p class="mb-3 text-secondary">Joanne<span class="ms-2 fs-6">Aug 17 2021</span></p>
+                    <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
+                    <p class="card-text text-secondary">服務很好、設備優良！</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card mb-2 p-4 w-100">
+              <div class="row g-0">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="assets/images/customer-4.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body ms-md-5">
+                    <p class="mb-3 text-secondary">葉子<span class="ms-2 fs-6">Aug 18 2021</span></p>
+                    <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
+                    <p class="card-text text-secondary">老師的教學很專業</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card mb-2 p-4 w-100">
+              <div class="row g-0">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="assets/images/customer-2.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body ms-md-5">
+                    <p class="mb-3 text-secondary">穎旻<span class="ms-2 fs-6">Aug 22 2021</span></p>
+                    <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
+                    <p class="card-text text-secondary">上課後身體健康很多</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card mb-2 p-4 w-100">
+              <div class="row g-0">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="assets/images/customer-5.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body ms-md-5">
+                    <p class="mb-3 text-secondary">Ray<span class="ms-2 fs-6">Aug 18 2021</span></p>
+                    <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
+                    <p class="card-text text-secondary">很舒壓</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card mb-2 p-4 w-100">
+              <div class="row g-0">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="assets/images/customer-3.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body ms-md-5">
+                    <p class="mb-3 text-secondary">子琪<span class="ms-2 fs-6">Oct 29 2021</span></p>
+                    <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
+                    <p class="card-text text-secondary">上課很有趣！</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card mb-2 p-4 w-100">
+              <div class="row g-0">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="assets/images/customer-6.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body ms-md-5">
+                    <p class="mb-3 text-secondary">Wang<span class="ms-2 fs-6">Oct 29 2021</span></p>
+                    <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
+                    <p class="card-text text-secondary">讚的！</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper__btn d-flex justify-content-between w-100 d-md-none">
+          <div class="swiper-btn-prev fs-1 text-primary"><i class="bi bi-arrow-left"></i></div>
+          <div class="swiper-btn-next fs-1 text-secondary"><i class="bi bi-arrow-right"></i></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+</div>
+</section>
 
 
 

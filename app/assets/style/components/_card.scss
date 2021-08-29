@@ -2,23 +2,10 @@
 
     &__img{
         width: 100%;
-        height: 420px;
         border-radius: 1rem;
         object-fit: cover;
     }
 
-    &__text{
-        position: absolute;
-        top: 72%;
-
-    @include media-breakpoint-up(md) {
-        top: 60%;
-    }
-
-    @include media-breakpoint-up(lg) {
-        top: 72%;
-    }
-    }
 }
 
 
@@ -26,5 +13,88 @@
 
     @include media-breakpoint-up(lg) {
         margin-left: -95px;
+    }
+}
+
+// 師資：大張的老師圖片
+.teacherCardPic{
+
+    img{
+        object-fit: cover;
+        height: 628px;
+        border-radius: 16px;
+    }
+
+}
+
+// 放鬆：卡片圖片
+.relaxCardPic{
+
+    height: 210px;
+    
+    @include media-breakpoint-up(md) {
+        height: 117px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 207px;
+    }
+
+    img{
+        object-fit: cover;
+        border-radius: 16px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+// 放鬆：大張卡片圖片
+.relaxBigCardPic{
+
+    height: 210px;
+
+    @include media-breakpoint-up(md) {
+        height: 266px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 444px;
+    }
+
+    img{
+        object-fit: cover;
+        border-radius: 16px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+// 課程方案 卡片圖片
+.projectCardPic{
+
+    --bs-aspect-ratio: 70%;
+    @include media-breakpoint-up(md) {
+        --bs-aspect-ratio: 73%;
+    }
+    
+    img{
+        object-fit: cover;
+        border-radius: 16px 16px 0 0;
+        height: 100%;
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            border-radius: 16px 0 0 16px;
+        }
+        @include media-breakpoint-up(lg) {
+            border-radius: 16px 16px 0 0;
+        }
+    }
+}
+
+.ratio-2x1{
+    @include media-breakpoint-up(md) {
+        --bs-aspect-ratio: 50%;
     }
 }

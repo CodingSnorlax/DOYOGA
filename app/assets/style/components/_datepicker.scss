@@ -1,0 +1,18 @@
+.datepicker-primary{
+    color: #907A7B;
+}
+
+.datepicker-main{
+    color: #907A7B;
+}
+
+.datepicker-controls{
+    .btn:hover{
+        background-color: white;
+        color: #907A7B;
+    }
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+    background-color: #907A7B;
+  }

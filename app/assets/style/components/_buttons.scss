@@ -13,6 +13,29 @@
     }
 }
 
-.btn{
+.smallBtn{
     padding: 8px 16px 8px 16px;
+}
+
+.threeBtnGroup{
+
+    &__btn{
+        border-radius: 16px;
+        padding: 12px 20px;
+        color: #907A7B;
+        background-color: #F5F0E7;
+
+        @include media-breakpoint-up(md){
+            padding: 12px 13px;
+        }
+        @include media-breakpoint-up(lg){
+            padding: 12px 48px;
+        }
+
+        &--active{
+            background-color: #907A7B;
+            color: #FFFFFF;
+        }
+    }
+
 }
