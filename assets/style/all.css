@@ -21044,4 +21044,8 @@ body a {
   background-color: #907A7B;
 }
 
+.rounded-16 {
+  border-radius: 1rem !important;
+}
+
 /*# sourceMappingURL=all.css.map */
