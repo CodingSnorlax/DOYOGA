@@ -23,7 +23,6 @@
       });
 
       // 聽聽他們怎麼說 swiper
-
       var swiper = new Swiper(".feedbackSwiper", {
         slidesPerView: 1,
         spaceBetween: 30,
@@ -69,6 +68,32 @@
         },
       }
       });
+
+      // 師資介紹 swiper
+      var swiper = new Swiper(".teacherSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        slidesPerColumn: 4,
+        slidesPerColumnFill: "row",
+        // autoplay: {
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // },
+
+        breakpoints: {
+        768:{
+          slidesPerView: 2.15,
+          slidesPerColumn: 1,
+          slidesPerColumnFill: "row",
+        },
+        992:{
+          slidesPerView: 3.3,
+          slidesPerColumn: 1,
+          slidesPerColumnFill: "row",
+        },
+      }
+      });
+
 
 
       // datepicker

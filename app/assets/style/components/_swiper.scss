@@ -24,15 +24,16 @@
     height: auto;
     overflow: hidden;
     // overflow-x: scroll;
-  }
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    img{
-        border-radius: 16px;
-        object-fit: cover;
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img{
+          border-radius: 16px;
+          object-fit: cover;
+      }
     }
   }
   
@@ -58,4 +59,10 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+
+  // 師資介紹swiper
+  .teacherSwiper{
+    width: 100%; 
+    overflow: hidden;
   }

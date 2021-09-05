@@ -1,0 +1,14 @@
+.ratio-2x1{
+    @include media-breakpoint-up(md) {
+        --bs-aspect-ratio: 50%;
+    }
+}
+
+.ratio-md104-lg63{
+    @include media-breakpoint-up(md) {
+        --bs-aspect-ratio: 104% !important;
+    }
+    @include media-breakpoint-up(lg) {
+        --bs-aspect-ratio: 63% !important;
+    }
+}
