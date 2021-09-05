@@ -21033,24 +21033,6 @@ body a {
   }
 }
 
-@media (min-width: 768px) {
-  .ratio-2x1 {
-    --bs-aspect-ratio: 50%;
-  }
-}
-
-@media (min-width: 768px) {
-  .ratio-md104-lg63 {
-    --bs-aspect-ratio: 104% !important;
-  }
-}
-
-@media (min-width: 992px) {
-  .ratio-md104-lg63 {
-    --bs-aspect-ratio: 63% !important;
-  }
-}
-
 .badgeCard .badge {
   position: absolute;
   left: 20px;
@@ -21060,10 +21042,41 @@ body a {
   z-index: 999;
 }
 
-.badgeCard img {
+.badgeCard__img {
+  height: 260px;
+  width: 100%;
+}
+
+.badgeCard__img img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
+  width: 100%;
+}
+
+.roundPhotoCard {
+  position: relative;
+  margin-top: 47.5px;
+  height: 100%;
+}
+
+.roundPhotoCard img {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  top: -47.5px;
+  left: 50%;
+  margin-left: -47.5px;
+}
+
+.roundPhotoCard .dark-round-border {
+  border: 4px solid #907A7B;
+  border-radius: 50%;
+}
+
+.roundPhotoCard .light-round-border {
+  border: 4px solid #C0A4A5;
+  border-radius: 50%;
 }
 
 .courseSwiper {
@@ -21072,7 +21085,7 @@ body a {
   overflow: hidden;
 }
 
-.swiper-slide {
+.courseSwiper .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21084,7 +21097,7 @@ body a {
           align-items: center;
 }
 
-.swiper-slide img {
+.courseSwiper .swiper-slide img {
   border-radius: 16px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -21112,6 +21125,11 @@ body a {
      object-fit: cover;
 }
 
+.teacherSwiper {
+  width: 100%;
+  overflow: hidden;
+}
+
 .datepicker-primary {
   color: #907A7B;
 }
@@ -21131,6 +21149,24 @@ body a {
 
 .rounded-16 {
   border-radius: 1rem !important;
+}
+
+@media (min-width: 768px) {
+  .ratio-2x1 {
+    --bs-aspect-ratio: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ratio-md104-lg63 {
+    --bs-aspect-ratio: 104% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .ratio-md104-lg63 {
+    --bs-aspect-ratio: 63% !important;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
