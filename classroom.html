@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>瑜珈空間 | DOYOGA | Taiwan</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker-bs4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -279,16 +280,16 @@
 </section>
 
     <!-- footer -->
-    <footer class="footer bg-primary text-white">
+    <footer class="footer bg-secondary text-white">
 
       <!-- footer 上半部 訂閱電子報 -->
       <div class="subscribeBarWrapper border-bottom pt-6 pt-md-8 pb-6 pb-md-8">
           <div class="container">
             <div class="subscribeBar d-lg-flex justify-content-lg-between align-items-center">
               <p class="fs-3 mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
-              <div class="subscribe d-flex">
-                <input type="text" class="subscribe__input" placeholder="輸入您的電子信箱" id="subscribe">
-                <a href="#"><button type="button" class="subscribe__btn text-white bg-secondary">訂閱</button></a>
+              <div class="largeInputGroup d-flex">
+                <input type="text" class="largeInputGroup__input" placeholder="輸入您的電子信箱" id="subscribe">
+                <a href="#"><button type="button" class="largeInputGroup__btn text-white bg-primary">訂閱</button></a>
               </div>
             </div>
           </div>
@@ -328,6 +329,10 @@
     </footer>
 
     <!-- js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>

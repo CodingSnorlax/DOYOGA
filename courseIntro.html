@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>課程介紹 | DOYOGA | Taiwan</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker-bs4.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,19 +72,186 @@
     </header>
 
     
+<div class="container">
+    <div class="row pt-12 pt-md-16 pb-12 pb-md-18 pb-lg-16 justify-content-center">
 
+        <h2 class="text-secondary text-center fs-2 mb-6">課程介紹</h2>
+
+        <div class="col-12 col-lg-10">
+            <div class="card mb-3">
+                <div class="row">
+                  <div class="col-md-6 col-lg-7 mb-2">
+                    <div class="ratio ratio-md104-lg63" style="--bs-aspect-ratio: 63%;">
+                      <img src="assets/images/index_teacher_mainPic.jpeg" class="img-fluid rounded-16" alt="...">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-5">
+                    <div class="card-body w-100">
+                      <h2 class="fs-2 text-secondary fw-medium mb-1">本月限定課程 - 空中瑜珈</h2>
+                      <p class="mb-4 text-primary">授課老師：Carol Tang <span class="ms-2 fw-light rounded-16 bg-secondary text-white pt-1 pb-1 ps-4 pe-4">60 min</span></p>
+                      <div class="text-secondary">
+                        <p class="mb-4">使用掛布懸掛在半空，進行哈達瑜珈體位法練習<br>藉由地心引力的重力原理<br>鍛鍊核心肌群，舒緩脊椎壓力<br>訓練身體協調性，深層放鬆身體<br>課堂裡老師會視同學狀況安排教導倒立動作<br>對於不敢嘗試倒立的同學來說<br>藉由掛布的支持與保護<br>加上老師細心指導，讓同學能更快掌握</p>
+                        <a href="./reservationPlan.html">
+                          <button type="button" class="btn btn-primary smallBtn text-white fs-4">立即預約</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 課程介紹 子搜尋列 -->
+
+<nav class="subNavbar bg-primary pt-5 pb-5 mb-12">
+  <div class="container">
+    <div class="d-flex align-items-center">
+      <div class="mediumInputGroup d-flex me-2">
+        <input type="text" class="mediumInputGroup__input" placeholder="請輸入要搜尋的課程" id="subscribe">
+        <a href="#"><button type="button" class="mediumInputGroup__btn text-white bg-secondary">搜尋</button></a>
+      </div>
+      <select class="form-select courseSelect text-secondary" aria-label="Default select example">
+        <option selected>全部課程</option>
+        <option value="Basic">基礎 Basic</option>
+        <option value="Iyengar">艾揚格 Iyengar</option>
+        <option value="Hatha">哈達 Hatha</option>
+        <option value="Universal">寰宇 Universal</option>
+        <option value="Arco Yoga">雙人飛行 Arco Yoga</option>
+        <option value="Ashtanga">阿斯坦加 Ashtanga</option>
+        <option value="Yin Yang">陰陽 Yin Yang</option>
+        <option value="Aroma Yoga">香氛 Aroma Yoga</option>
+      </select>
+    </div>
+  </div>
+</nav>
+
+<!-- 課程 cards  -->
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-12 col-md-6">
+      <div class="card badgeCard text-white mb-8">
+        <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
+        <div class="ratio" style="--bs-aspect-ratio: 68%;">
+          <img src="assets/images/index_swiper1.jpeg" class="card-img" alt="...">
+        </div>
+        <div class="card-img-overlay d-flex flex-column justify-content-end ps-6 pb-6">
+          <h5 class="card-title fs-2">基礎 Basic</h5>
+          <p class="card-text fw-light">授課老師：Carol Tang</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card badgeCard text-white mb-8">
+        <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
+        <div class="ratio" style="--bs-aspect-ratio: 68%;">
+          <img src="assets/images/index_swiper2.jpeg" class="card-img" alt="...">
+        </div>
+        <div class="card-img-overlay d-flex flex-column justify-content-end ps-6 pb-6">
+          <h5 class="card-title fs-2">艾揚格 Iyengar</h5>
+          <p class="card-text fw-light">授課老師：Kanae</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card badgeCard text-white mb-8">
+        <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
+        <div class="ratio" style="--bs-aspect-ratio: 68%;">
+          <img src="assets/images/index_swiper3.jpeg" class="card-img" alt="...">
+        </div>
+        <div class="card-img-overlay d-flex flex-column justify-content-end ps-6 pb-6">
+          <h5 class="card-title fs-2">哈達 Hatha</h5>
+          <p class="card-text fw-light">授課老師：Kuzuha</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card badgeCard text-white mb-8">
+        <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
+        <div class="ratio" style="--bs-aspect-ratio: 68%;">
+          <img src="assets/images/index_swiper4_and_project_1.jpeg" class="card-img" alt="...">
+        </div>
+        <div class="card-img-overlay d-flex flex-column justify-content-end ps-6 pb-6">
+          <h5 class="card-title fs-2">寰宇 Universal</h5>
+          <p class="card-text fw-light">授課老師：Kuzuha</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card badgeCard text-white mb-8">
+        <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
+        <div class="ratio" style="--bs-aspect-ratio: 68%;">
+          <img src="assets/images/Arco.jpeg" class="card-img" alt="...">
+        </div>
+        <div class="card-img-overlay d-flex flex-column justify-content-end ps-6 pb-6">
+          <h5 class="card-title fs-2">雙人飛行 Arco Yoga</h5>
+          <p class="card-text fw-light">授課老師：Kuzuha、Kanae</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card badgeCard text-white mb-8">
+        <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
+        <div class="ratio" style="--bs-aspect-ratio: 68%;">
+          <img src="assets/images/Ashtanga.jpeg" class="card-img" alt="...">
+        </div>
+        <div class="card-img-overlay d-flex flex-column justify-content-end ps-6 pb-6">
+          <h5 class="card-title fs-2">阿斯坦加 Ashtanga</h5>
+          <p class="card-text fw-light">授課老師：Kanae</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card badgeCard text-white mb-8">
+        <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
+        <div class="ratio" style="--bs-aspect-ratio: 68%;">
+          <img src="assets/images/YinYang.jpeg" class="card-img" alt="...">
+        </div>
+        <div class="card-img-overlay d-flex flex-column justify-content-end ps-6 pb-6">
+          <h5 class="card-title fs-2">陰陽 Yin Yang</h5>
+          <p class="card-text fw-light">授課老師：Asa Chen</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card badgeCard text-white mb-8">
+        <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
+        <div class="ratio" style="--bs-aspect-ratio: 68%;">
+          <img src="assets/images/index_relax_1.jpeg" class="card-img" alt="...">
+        </div>
+        <div class="card-img-overlay d-flex flex-column justify-content-end ps-6 pb-6">
+          <h5 class="card-title fs-2">香氛 Aroma Yoga</h5>
+          <p class="card-text fw-light">授課老師：Asa Chen</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
 
     <!-- footer -->
-    <footer class="footer bg-primary text-white">
+    <footer class="footer bg-secondary text-white">
 
       <!-- footer 上半部 訂閱電子報 -->
       <div class="subscribeBarWrapper border-bottom pt-6 pt-md-8 pb-6 pb-md-8">
           <div class="container">
             <div class="subscribeBar d-lg-flex justify-content-lg-between align-items-center">
               <p class="fs-3 mb-2 mb-lg-0">現在訂閱，獲得課程優惠碼！</p>
-              <div class="subscribe d-flex">
-                <input type="text" class="subscribe__input" placeholder="輸入您的電子信箱" id="subscribe">
-                <a href="#"><button type="button" class="subscribe__btn text-white bg-secondary">訂閱</button></a>
+              <div class="largeInputGroup d-flex">
+                <input type="text" class="largeInputGroup__input" placeholder="輸入您的電子信箱" id="subscribe">
+                <a href="#"><button type="button" class="largeInputGroup__btn text-white bg-primary">訂閱</button></a>
               </div>
             </div>
           </div>
@@ -123,6 +291,10 @@
     </footer>
 
     <!-- js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
