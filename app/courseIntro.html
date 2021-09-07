@@ -41,12 +41,14 @@ current: courseIntro
 
 <nav class="subNavbar bg-primary pt-5 pb-5 mb-12">
   <div class="container">
-    <div class="d-flex align-items-center">
-      <div class="mediumInputGroup d-flex me-2">
-        <input type="text" class="mediumInputGroup__input" placeholder="請輸入要搜尋的課程" id="subscribe">
-        <a href="#"><button type="button" class="mediumInputGroup__btn text-white bg-secondary">搜尋</button></a>
+    <div class="d-flex">
+
+      <div class="input-group mediumInputGroup me-2" style="max-width: 350px;">
+        <input type="text" class="form-control placeholderTextSecondary" placeholder="請輸入要搜尋的課程" aria-label="請輸入要搜尋的課程" aria-describedby="請輸入要搜尋的課程">
+        <button class="btn btn-secondary text-white py-2 px-3" type="button" id="button-addon2">搜尋</button>
       </div>
-      <select class="form-select courseSelect text-secondary" aria-label="Default select example">
+      
+      <select class="form-select courseSelect text-secondary border-0 py-2 px-3" aria-label="Default select example" style="max-width: 106px;">
         <option selected>全部課程</option>
         <option value="Basic">基礎 Basic</option>
         <option value="Iyengar">艾揚格 Iyengar</option>
@@ -58,6 +60,7 @@ current: courseIntro
         <option value="Aroma Yoga">香氛 Aroma Yoga</option>
       </select>
     </div>
+
   </div>
 </nav>
 
@@ -70,19 +73,22 @@ current: courseIntro
     <!-- 課程介紹 -->
     <div class="col-12 col-lg-9">
       <div class="row">
+        <!-- 基礎課程 card-->
         <div class="col-12 col-md-6 col-lg-7">
           <div class="card badgeCard text-white mb-8">
-            <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
-            <div class="badgeCard__img">
-              <img src="assets/images/index_swiper1.jpeg" class="card-img" alt="...">
-            </div>
-            <div class="card-img-overlay d-flex flex-column justify-content-end ps-6 pb-6">
-              <h5 class="card-title fs-2">基礎 Basic</h5>
-              <p class="card-text fw-light">授課老師：Carol Tang</p>
-            </div>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#basicCourseModal">
+              <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
+              <div class="badgeCard__img">
+                <img src="assets/images/index_swiper1.jpeg" class="card-img" alt="...">
+              </div>
+              <div class="card-img-overlay d-flex flex-column justify-content-end ps-6 pb-6">
+                <h5 class="card-title text-white fs-2">基礎 Basic</h5>
+                <p class="card-text text-white fw-light">授課老師：Carol Tang</p>
+              </div>
+            </a>
           </div>
         </div>
-    
+          
         <div class="col-12 col-md-6 col-lg-5">
           <div class="card badgeCard text-white mb-8">
             <span class="badge rounded-pill bg-primary fw-light fs-6">60 min</span>
@@ -282,4 +288,37 @@ current: courseIntro
     </div>
 
   </div>
+</div>
+
+<!-- modal -->
+<div class="container">
+  <!-- 基礎課程 modal start -->
+  <div class="modal fade" id="basicCourseModal" tabindex="-1" aria-labelledby="#basicCourseModal" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content border-0 rounded-16">
+        <div class="modal-body bg-primary py-8 px-4 py-lg-13">
+          
+          <div class="container">
+
+            <div class="row justify-content-center flex-lg-row align-items-lg-center">
+              <div class="col-6 col-lg-5">
+                <div class="ratio ratio-1x1 mb-4">
+                  <img class="rounded-16 mb-4" src="./assets/images/index_teacher_mainPic.jpeg" alt="">            
+                </div>
+              </div>
+              <div class="col-12 col-lg-7">
+                <h3 class="text-white fs-2 fw-medium">基礎 Basic</h3>
+                <p class="text-white mb-4">授課老師：Carol Tang<span class="ms-3 badge rounded-pill bg-secondary">60 min</span></p>
+                <p class="text-white mb-4">使用掛布懸掛在半空，進行哈達瑜珈體位法練習，藉由地心引力的重力原理，鍛鍊核心肌群，舒緩脊椎壓力。<br>訓練身體協調性，深層放鬆身體。<br>課堂裡老師會視同學狀況安排教導倒立動作，對於不敢嘗試倒立的同學來說，藉由掛布的支持與保護，加上老師細心指導，讓同學能更快掌握。</p>
+                <button type="button" class="btn btn-light text-secondary smallBtn">立即預約</button>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 基礎課程 modal end -->
 </div>
