@@ -20833,39 +20833,24 @@ body a {
   color: #907A7B;
 }
 
-.mediumInputGroup__input {
-  width: 175px;
-  padding: 6px 19px 6px 12px;
-  border: none;
-  display: block;
-  border-radius: 4px 0 0 4px;
-}
-
-.mediumInputGroup__input::-webkit-input-placeholder {
+.placeholderTextSecondary::-webkit-input-placeholder {
   color: #907A7B;
 }
 
-.mediumInputGroup__input::-moz-placeholder {
+.placeholderTextSecondary::-moz-placeholder {
   color: #907A7B;
 }
 
-.mediumInputGroup__input:-ms-input-placeholder {
+.placeholderTextSecondary:-ms-input-placeholder {
   color: #907A7B;
 }
 
-.mediumInputGroup__input::-ms-input-placeholder {
+.placeholderTextSecondary::-ms-input-placeholder {
   color: #907A7B;
 }
 
-.mediumInputGroup__input::placeholder {
+.placeholderTextSecondary::placeholder {
   color: #907A7B;
-}
-
-.mediumInputGroup__btn {
-  padding: 8px 16px 8px 16px;
-  border: none;
-  display: block;
-  border-radius: 0 4px 4px 0;
 }
 
 .largeInputGroup__input {
@@ -20926,13 +20911,6 @@ body a {
 
 .primary-form-style::placeholder {
   color: #C0A4A5;
-}
-
-.courseSelect {
-  width: 114px;
-  padding: 6px 12px;
-  border-radius: 4px;
-  border: none;
 }
 
 .overlay__card__img {

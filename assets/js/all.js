@@ -1,11 +1,5 @@
 "use strict";
 
-// Initialize Swiper
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   centeredSlides: true,
-//   spaceBetween: 30,
-// });
 // 課程的swiper
 var swiper = new Swiper(".courseSwiper", {
   slidesPerView: 2,
@@ -66,10 +60,6 @@ var swiper = new Swiper(".teacherSwiper", {
   spaceBetween: 30,
   slidesPerColumn: 4,
   slidesPerColumnFill: "row",
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
   breakpoints: {
     768: {
       slidesPerView: 2.15,
