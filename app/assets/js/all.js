@@ -1,4 +1,12 @@
-      // 課程的swiper
+$(document).ready(function(){
+  $('#target').click(function(){
+    alert('hihihi');
+  });
+})
+
+  
+     
+     // 課程的swiper
       var swiper = new Swiper(".courseSwiper", {
         slidesPerView: 2,
         spaceBetween: 30,
@@ -94,4 +102,5 @@
       // format: 'mm/dd/yyyy',
     }); 
 
-  
+
+
