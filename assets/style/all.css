@@ -21057,6 +21057,15 @@ body a {
   border-radius: 50%;
 }
 
+.courseLevel__card {
+  cursor: pointer;
+}
+
+.courseLevel__card:hover {
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .courseSwiper {
   width: 100%;
   height: auto;
@@ -21108,6 +21117,11 @@ body a {
   overflow: hidden;
 }
 
+.courseLevelSwiper {
+  width: 100%;
+  overflow: hidden;
+}
+
 .datepicker-primary {
   color: #907A7B;
 }
@@ -21123,6 +21137,20 @@ body a {
 
 .datepicker-cell.selected, .datepicker-cell.selected:hover {
   background-color: #907A7B;
+}
+
+.arrow::after {
+  content: '';
+  position: absolute;
+  bottom: -56px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: 12px solid #907A7B;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
 }
 
 .rounded-16 {

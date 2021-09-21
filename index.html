@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DOYOGA | Taiwan</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker-bs4.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css"/>
+    <link rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css"/> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
@@ -422,7 +424,7 @@
     <div class="col-12">
 
         <!-- Swiper -->
-      <div class="feedbackSwiper mySwiper">
+      <div class="swiper feedbackSwiper">
         <div class="swiper-wrapper">
 
           <div class="swiper-slide">
@@ -436,23 +438,6 @@
                     <p class="mb-3 text-secondary">Joanne<span class="ms-2 fs-6">Aug 17 2021</span></p>
                     <p class="card-text mb-3 text-primary"><span class="me-1"></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
                     <p class="card-text text-secondary">服務很好、設備優良！</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="card mb-2 p-4 w-100">
-              <div class="row g-0">
-                <div class="col-3 d-flex justify-content-center align-items-center">
-                  <img src="assets/images/customer-4.png" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-9">
-                  <div class="card-body ms-md-5">
-                    <p class="mb-3 text-secondary">葉子<span class="ms-2 fs-6">Aug 18 2021</span></p>
-                    <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
-                    <p class="card-text text-secondary">老師的教學很專業</p>
                   </div>
                 </div>
               </div>
@@ -480,13 +465,13 @@
             <div class="card mb-2 p-4 w-100">
               <div class="row g-0">
                 <div class="col-3 d-flex justify-content-center align-items-center">
-                  <img src="assets/images/customer-5.png" class="img-fluid rounded-start" alt="...">
+                  <img src="assets/images/customer-3.png" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-9">
                   <div class="card-body ms-md-5">
-                    <p class="mb-3 text-secondary">Ray<span class="ms-2 fs-6">Aug 18 2021</span></p>
-                    <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
-                    <p class="card-text text-secondary">很舒壓</p>
+                    <p class="mb-3 text-secondary">子琪<span class="ms-2 fs-6">Oct 29 2021</span></p>
+                    <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
+                    <p class="card-text text-secondary">上課很有趣！</p>
                   </div>
                 </div>
               </div>
@@ -497,13 +482,30 @@
             <div class="card mb-2 p-4 w-100">
               <div class="row g-0">
                 <div class="col-3 d-flex justify-content-center align-items-center">
-                  <img src="assets/images/customer-3.png" class="img-fluid rounded-start" alt="...">
+                  <img src="assets/images/customer-4.png" class="img-fluid rounded-start" alt="...">
                 </div>
                 <div class="col-9">
                   <div class="card-body ms-md-5">
-                    <p class="mb-3 text-secondary">子琪<span class="ms-2 fs-6">Oct 29 2021</span></p>
+                    <p class="mb-3 text-secondary">葉子<span class="ms-2 fs-6">Aug 18 2021</span></p>
                     <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
-                    <p class="card-text text-secondary">上課很有趣！</p>
+                    <p class="card-text text-secondary">老師的教學很專業</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="card mb-2 p-4 w-100">
+              <div class="row g-0">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                  <img src="assets/images/customer-5.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-9">
+                  <div class="card-body ms-md-5">
+                    <p class="mb-3 text-secondary">Ray<span class="ms-2 fs-6">Aug 18 2021</span></p>
+                    <p class="card-text mb-3 text-primary"><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span><span class="me-1"><i class="bi bi-star-fill"></i></span></p>
+                    <p class="card-text text-secondary">很舒壓</p>
                   </div>
                 </div>
               </div>
@@ -526,11 +528,14 @@
               </div>
             </div>
           </div>
+
         </div>
+
         <div class="swiper__btn d-flex justify-content-between w-100 d-md-none">
           <div class="swiper-btn-prev fs-1 text-primary"><i class="bi bi-arrow-left"></i></div>
           <div class="swiper-btn-next fs-1 text-secondary"><i class="bi bi-arrow-right"></i></div>
         </div>
+        
       </div>
 
     </div>
@@ -595,12 +600,17 @@
     </footer>
 
     <!-- js -->
+    <!-- AOS 套件 -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script> 
+    <script> AOS.init(); </script> 
+
+    <!-- datepicker -->
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script> -->
+
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
